@@ -13,12 +13,21 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { useDispatch } from 'react-redux'
 import { getUser } from './Store/slices/UserSlice'
-
+import { getAllMessages } from './Store/slices/messegesSlice'
+import { getAllTimeline } from './Store/slices/timelineSlice'
+import { getAllSkills } from './Store/slices/addSkillSlice'
+import {getAllSoftwareApplications} from './Store/slices/softwareApplicationSlice'
+import { getAllProjects } from './Store/slices/ProjectSlice'
 const App = () => {
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(getUser())
-  }, [dispatch])
+    dispatch(getAllMessages());
+    dispatch(getAllTimeline());
+    dispatch(getAllSkills())
+     dispatch(getAllSoftwareApplications());
+     dispatch(getAllProjects());
+  }, [])
   return (
     <Router>
       <Routes>

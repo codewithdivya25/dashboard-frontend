@@ -33,7 +33,7 @@ import { Button } from "../components/ui/button";
 import Dashboard from "./sub-components/Dashboard";
 import AddProject from "./sub-components/AddProject";
 import AddSkill from "./sub-components/AddSkill";
-import AddApplication from "./sub-components/AddApplication";
+import AddApplication from "./sub-components/AddSoftwareApplications";
 import AddTimeline from "./sub-components/AddTimeline";
 import Messages from "./sub-components/Messages";
 import Account from "./sub-components/Account";

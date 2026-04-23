@@ -49,8 +49,8 @@ const Account = () => {
         {/* Content */}
         <div className="bg-white rounded-2xl shadow-sm p-4 sm:p-6 min-h-[400px]">
 
-          {selectedComponent === "Profile" && <Profile />}
-          {selectedComponent === "Update Profile" && <UpdateProfile />}
+          {selectedComponent === "Profile" && <Profile />} 
+      {selectedComponent === "Update Profile" && <UpdateProfile/>}
           {selectedComponent === "Update Password" && <UpdatePassword />}
 
         </div>

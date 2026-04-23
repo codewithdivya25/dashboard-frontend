@@ -71,6 +71,7 @@ const userSlice = createSlice({
       state.loading = false;
       state.isUpdated = true;
       state.message = action.payload;
+      state.user = action.payload.user;
     },
     updateFailed: (state, action) => {
       state.loading = false;
